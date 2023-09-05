@@ -1,16 +1,14 @@
 # RGBSAR
 
-Welcome to the RGBSAR project repository. This repository contains code and data related to image processing, data analysis, and machine learning tasks for the RGBSAR project. Below is a brief overview of the project structure and key components.
+Welcome to the RGBSAR repository! This repository contains code and resources related to RGB and SAR image processing, fusion, and machine learning.
 
 ## Project Overview
 
-The RGBSAR project focuses on various aspects of image data processing and analysis. The repository includes the following components:
-
-### Basic Codes
-
-Some initial code snippets have been uploaded to the repository. These codes are currently being cleaned and organized to ensure better presentation and usability.
+The project is organized into the following sections:
 
 ### Installation
+
+To set up the necessary modules for this project, please refer to the [requirements.txt](requirements.txt) file.
 
 Before running the project, make sure to install the required Python modules. You can do this by running the following command:
 
@@ -18,49 +16,40 @@ Before running the project, make sure to install the required Python modules. Yo
 pip install -r requirements.txt
 ```
 
-The workflow, data and codes will be uploaded soon. 
-
-Basic codes has been uploaded.
-
-Code is being clean to make it presentable
-
-## Getting Started
-
-### Prerequisites
-
-Install the modules from the [requirements](requirements.txt) text file
-
 ### Libraries
 
-- List of imported Libraries can be found in [Libraries.ipynb](Notebook/Libraries.ipynb)
+You can find a list of imported libraries used in the project in [Libraries.ipynb](Notebook/Libraries.ipynb).
 
-### Functions 
+### Functions
 
-- These are in [Functions.ipynb](Notebook/Functions.ipynb) and [ModelsListDiffFuntions.ipynb](Notebook/ModelsListDiffFuntions.ipynb)
+Project functions are documented in two notebooks: [Functions.ipynb](Notebook/Functions.ipynb) and [ModelsListDiffFuntions.ipynb](Notebook/ModelsListDiffFuntions.ipynb).
 
-## Exploratory Data Analysis
+### Exploratory Data Analysis (EDA)
 
-### Workflow
+- [analysis.ipynb](Notebook/analysis.ipynb): Provides an overview of the project's workflow.
+- [DeBlur.ipynb](Notebook/DeBlur.ipynb): Detects and corrects blurry images.
+- [EDA.ipynb](Notebook/EDA.ipynb): Generates a dataframe with image properties.
+- [GenerateMoreImages.ipynb](Notebook/GenerateMoreImages.ipynb): Creates synthetic data from a limited set of images.
+- [GetSysInfo.ipynb](Notebook/GetSysInfo.ipynb): Retrieves system information such as OS details, CPU, and GPU.
+- [resize_images.ipynb](Notebook/resize_images.ipynb): Resizes images to a uniform size.
 
-- [analysis.ipynb](Notebook/analysis.ipynb): Summary of the workflow
+### Image Data Fusion
 
-### Preprocessing 
+- [FusionRGBSAR.ipynb](Notebook/FusionRGBSAR.ipynb): Performs image fusion for pairs of SAR and RGB images.
 
-- [DeBlur.ipynb](Notebook/DeBlur.ipynb): Check for blur Images and fix them
-- [EDA.ipynb](Notebook/EDA.ipynb): Generate Dataframe of image properties
-- [GenerateMoreImages.ipynb](Notebook/GenerateMoreImages.ipynb) : Generate Synthetic Data from the few images available
-- [GetSysInfo.ipynb](Notebook/GetSysInfo.ipynb): Retrive the host system properties like OS name, OS version, CPU, GPU
-- [resize_images.ipynb](Notebook/resize_images.ipynb): Resize images to a uniform Sizes
+### Model Training, Evaluation, and Predictions
 
-## Image Data Fusion
+- [PlotHists.ipynb](Notebook/PlotHists.ipynb): Plots training history for models.
+- [ModelsListDiffTraining.ipynb](Notebook/ModelsListDiffTraining.ipynb): Trains image datasets using custom-built CNN models with pre-trained CNN models.
+- [ModelsListDiffTestEvaluate.ipynb](Notebook/ModelsListDiffTestEvaluate.ipynb): Evaluates the performance of trained models, performs predictions, and evaluates their effectiveness.
+- [Modindivi.ipynb](Notebook/Modindivi.ipynb): Makes predictions using trained models on resource-limited operating systems.
 
-- [FusionRGBSAR.ipynb](Notebook/FusionRGBSAR.ipynb): Perform Image Fusion for a pair of SAR and RGB images
+### Equivalent Python Scripts
 
-## Model Training and Evaluation
+Python script equivalents for the notebooks can be found in the [Scripts](Scripts) folder.
 
-- [PlotHists.ipynb](Notebook/PlotHists.ipynb): Plot model training history
-- [ModelsListDiffTraining.ipynb](Notebook/ModelsListDiffTraining.ipynb): Performs training of Image dataset using custom built CNN model with Pretrain CNN Models
-- [ModelsListDiffTestEvaluate.ipynb](Notebook/ModelsListDiffTestEvaluate.ipynb): Evaluate the performance of the trained models. Preform Predictions and evaluate
-- [Modindivi.ipynb](Notebook/Modindivi.ipynb): Perform a prediction of the trained model on resource limited OS
+<!-- ## Project Status -->
 
-The Eqivalent Python Script can be found in [Scripts](Scripts) Folder
+<!-- The project is under active development, and more content will be uploaded soon. -->
+
+<!-- If you have any questions or suggestions, feel free to reach out! -->
